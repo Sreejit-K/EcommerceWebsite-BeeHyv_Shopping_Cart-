@@ -1,0 +1,67 @@
+.custom-toggler.navbar-toggler {
+  color: blue;
+  border-color: green;
+}
+
+.badge {
+
+  position: relative;
+  top: -25px;
+  left: -3px;
+}
+
+.s1{
+  font-family: 'Changa', sans-serif;
+}
+
+.f1{
+  font-size: 13px;
+}
+
+
+.button_grp ul li.active,
+.button_grp ul li:hover{
+  background: #0000fe;
+  color:#fff;
+}
+.headimg{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoNunxITwHmiq_hzCmg_2mwHJj0OUl0dYYQA&usqp=CAU");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height:400px;
+}
+
+.item{
+
+}
+
+/* product */
+.product-card{
+  height :550px;
+  width: 300px;
+
+}
+
+.card-img{
+height: 360px;
+}
+
+.addtocart{
+
+}
+
+.bottom-footer{
+  padding-top:1px;
+  text-align:center;
+  font-family: arial, sans-serif;
+  font-size:11px;
+  width:auto;
+  height:30px;
+  background-color:black;
+
+}
+.deeppurple{
+  color: black;
+}

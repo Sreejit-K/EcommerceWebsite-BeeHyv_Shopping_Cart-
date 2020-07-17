@@ -1,0 +1,452 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>BeehyveShopingCart</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- this is my css -->
+  <link rel="stylesheet" type="text/css" href="home.css">
+
+  <!-- java script -->
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+
+  <!-- font awesome      -->
+
+  <script src="https://kit.fontawesome.com/031756a0fb.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- navigation bar -->
+  <!-- <div class="container-fluid f1 bg-light headimg">
+    <div class="row justify-content-center"> -->
+  <!-- <div class="col-md-1  text-center mx-2 p-2">
+        <img src="https://www.beehyv.com/media/images/icons-SVG/Beehyv-Logo-01.svg" height="40px" width="auto">
+      </div> -->
+  <!-- as;djlkajds -->
+  <div class="headimg">
+    <nav class="navbar navbar-expand-lg navbar-dark text-light  ">
+
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon custom-toggler"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a href="main.html"><img class="m-3" src="https://www.beehyv.com/media/images/icons-SVG/Beehyv-Logo-01.svg" height="40px" width="auto"></a>
+        <a class="navbar-brand text-success mx-3" href="main.html">Shopping Cart</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+          <li class="text-light nav-item active">
+            <a class="nav-link  mx-3" href="home.html">Home & Furniture<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  mx-3" href="electronics.html">Electonics</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link mx-3" href="main.html">Sports & Clothing</a>
+          </li>
+          <!--  -->
+          <li class="nav-item  ">
+            <a class="nav-link  mx-3" href="books.html">Books</a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2  my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+        <span class="mx-5"><a href="cart.html"><i class="fa fa-shopping-cart fa-2x text-success pt-2 " aria-hidden="true"></i></a>
+          <span class=" badge bg-light text-dark cart-item">0
+          </span></span>
+
+        <a class="navbar-brand" href="login.html">Logout</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- asdkljlasd -->
+  <!-- <div class="col-md-1text-center mt-2 ">
+        <a href="cart.html"><i class="fa fa-shopping-cart fa-2x text-dark pt-2 " aria-hidden="true"></i></a>
+        <span class=" badge bg-dark text-light cart-item">0
+        </span>
+        </a>
+      </div>
+      <div class="col-md-1">
+        <h5><a href="login.html" class="text-dark py-2 mx-2">Logout</a></h5>
+      </div> -->
+
+
+  <!-- </div>
+
+  </div> -->
+  <!-- end of navigation bar -->
+
+
+  <!-- cart -->
+
+  <div class="contaier f1 ">
+    <div class="row ">
+      <div class="col-md-5  border-right col-lg-2 col-sm-12 text-center ">
+
+        <h2 class="text-xs-center text-md-left  m-2">Filters</h2>
+        <hr class="deep-purple bg-dark text-xs-center text-md-left accent-2 mb-4 mt-0 d-inline-block " style="width: 100%;">
+
+        <!-- brand filter -->
+        <h4 class="text-xs-center text-md-left t m-4">Brands</h4>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="item" name="item"><span class="ml-2">All</span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Chairs" name="Chairs"><span class="ml-2">Chairs</span></label>
+        </div>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Sofas" name="Sofas"><span class="ml-2">Sofas</span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Shelfs" name="Shelfs"><span class="ml-2">Shelfs</span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Decoration" name="Decoration"><span class="ml-2">Decoration</span></label>
+        </div>
+        <!-- end of brand filter  -->
+
+        <!-- price filter -->
+        <h4 class="text-xs-center text-md-left  m-4">Pice</h4>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="item" name="item"><span class="ml-2">All price ranges</span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p1" name="p1"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 0 to <i class="fa fa-rupee " style="font-size:13px"></i> 1000 </span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p2" name="p2"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 1000 to <i class="fa fa-rupee" style="font-size:13px"></i> 2000 </span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p3" name="p3"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 2000 to <i class="fa fa-rupee" style="font-size:13px"></i> 3000</span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p4" name="p4"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 3000 to <i class="fa fa-rupee" style="font-size:13px"> 4000 </i> </span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p5" name="p5"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 4000 to <i class="fa fa-rupee" style="font-size:13px"> 5000</i> </span> </label>
+        </div>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p6" name="p6"> <span class="ml-2"> <i class="fa fa-chevron-right mx-1" aria-hidden="true"></i> <i class="fa fa-rupee" style="font-size:13px"></i> 5000 </span> </label>
+        </div>
+        <!-- end of price filter -->
+      </div>
+
+
+
+      <!-- products -->
+      <div class="col-md-7 col-lg-10 col-sm-12">
+        <div class="row justify-content-between text-center">
+          <!-- product-card -->
+          <div class=" item Chairs p2  product-card text-center  bg-light m-4">
+            <img class="card-img" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTMwbCe--ON0Xn4eqTM7kX11VGSTbC-2-SGtS78N0tLDSiaBF12XAdtpfPFeGza3ajg_6UFOy_eYjcREa4VbNKf9Qis_WgO4Hu-fcuPMIg&usqp=CAE" alt="Card image cap">
+
+            <pclass="mt-3 ">Men Black Solid Standard Fit ACDMY Round Neck DRI-FIT T-shirt</p>
+            <h6 class=" mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1046</h6>
+              <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Decoration p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTnjFoU9qVenqXmgp2xD_REjkgSMAwJwM9Ovu4Dp9BafnGjgCrVD8RCTGQCJHaedigTBushNV2Wx-2vH6h3YzpulnPVVPBVADwGPh2fQr8&usqp=CAE" alt="Card image cap">
+
+            <p>Tea Style Decorative Showpiece</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 2200</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Chairs  p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRhuFg0EPjFgHsJRICuDjyWD-wiL1Eb77bq6Fq8AsUAE_17mvTCHisuUNEuAYDx5uBZn0a9L3tAzPTWzpTo1bzoCMs0p1rXBr8y2TjExY6PVXcTLb1PWzNQ&usqp=CAE"
+              alt="Card image cap">
+            <h5 class="my-3 ">Nike</h5>
+            <p>High Living Bravo Hb Black High Back Office</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 2895</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Decoration p2  product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQVG2X0xGUnc0krPZ-VneU-FymxelADmykF0r0Ia4UOGqZMaS7gYL3gge9JhQdX-Ng2ZoXESK8R4oEsT9KKiog-YNsEXvMufQ&usqp=CAE" alt="Card image cap">
+
+            <p>The New Look Living Room Design Long Wall</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1954</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Shelfs p5 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRXASLsKV7fueVVc_SfaT91fDKDMdC_za56wNX9cZFkA-yvu3OiaD762hdYaJ0vtNIiUb2uQAvlbjvBXZnxMlxl7__v6xX7fFEfApZabxk0c3ycoTsh2RH2RA&usqp=CAE"
+              alt="Card image cap">
+            <p> 4-Shelf Kitchen Cabinet Solid wood</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 4496</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Decorations p1 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQNgZbj_TfjOuA6t3jaA8KGpXv5q_tLoUaWLJHmHDa9Al2jdEJReZ5xzwLd82hQ2E6wLIA91Oqr-Mr4_EnBipv_DW0PPC5Gz_9b-zTyeFAm&usqp=CAE" alt="Card image cap">
+
+            <p>Kawachi DIY Multifunctional Floor Standing</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 779</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Sofas  p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQtpvoohJEsYv4bZikeAxhg_MT8d5IDZ6HVMuo6Vajy7X4zrozIGqqrFrsgzAtNF3VJq9OHGgZxzOCGq_wiWlx11XV9x9f82JVD78XS-xIfDGA0C3q9P4GU&usqp=CAE"
+              alt="Card image cap">
+            <p>Solid Wood Bennett Sofa Set Online in India - Parsons Sofa Set</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1996</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Decoration p4 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ40_3MkC0K5revizif8auCiK_r78yoqUQ9jqhJhz-SgrrfT8N5XuFrPWuHt4sktQFJLoTQPVILiJeBSQ6xOPiLmwczs6B580Wg5kuYikBa&usqp=CAE" alt="Card image cap">
+
+            <p>Solid Wood Jali Bar Tully Online </p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 3359</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Shelfs  p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRlDQff-0FhGcUdGgjtvph5LiLpwbn1SzTqpwL_n69owOVEKjkE79IvI1ZBSA1b4Wx89GuJUpCLrUpdECqCjyc_PSxixTOJF4Vsw1FNAJA&usqp=CAE" alt="Card image cap">
+            <p>Crystal Furnitech Dynamic Engineered Wood</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 2239</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Sofas p2 p6 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTp9VWbVU5I_r4Sr1PZX58PudnU3LQ3kl6fXyDu83Tmpn_HMmqQnlBvv1BylnpCiZYaQ26iYj3JIQibqJmu8Qt-wLMOyVAQYdZLIFyVOQ59MfhQQfV6BkF_CA&usqp=CAE"
+              alt="Card image cap">
+
+            <p>Visitor Bench Steel Benches Three Seater Sofa</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 9099</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Selfs p1 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQJY63--7g4TW7PCXlfO8SWQsJL6hQ8SyZa829Q-D0rB7Q4rnSDav4r79Pmk-cO2HBxfx8taM0_Jthajb6Sorua49YT_mn-bMSMjaiZ1MMTbcqUVtF59KL2&usqp=CAE"
+              alt="Card image cap">
+
+            <p>Woodkartindia Wooden Corner Zigzag Wall Shelf for Home Decor Wall Decor Living Room Decor Gifting Item</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i>976</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Decoration p2  product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS8Qt48gH5X0W5-_xu2GkPGCDkQv_zwrskRnG8cJ_LVeq-pNpGKr3fsIWo0b7WarisV7TuPxpn6kkg-McLXJ4R8MOX-tmd702O3Zy07Lkwv6a8qSTcTjHjH&usqp=CAE"
+              alt="Card image cap">
+            <p>Sugandha Folding Engineered Wood Study Table</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1695</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+
+
+        </div>
+        <!-- end of product cards-->
+
+
+      </div>
+
+    </div>
+    <!-- end of products -->
+  </div>
+  </div>
+
+  </div>
+  <!-- end of cart -->
+
+
+
+  <!-- footer page -->
+  <footer class="page-footer f1 s1 font-small unique-color-dark" style="background-color:#00001a;">
+
+    <div style="background-color: #6351ce;">
+      <div class="container-fluid">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-light text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="deep-purple bg-light  accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place.</p>
+          <p> <span class="font-weight-bold">BeeHyv</span> is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, books, personal care products and more</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 text-light mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple bg-light  accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!" class="text-light ">Fashion </a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Electronics</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Sport Wear</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Books</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Home products</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2  text-light  col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase  font-weight-bold">Useful links</h6>
+          <hr class="bg-light ccent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!" class="text-light ">Your Account</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Discounts</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple bg-light accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3 "></i> Hyderabad, Gachiboli, IND</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@beehyv.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright bottom-footer text-light py-3"><span class="text-secondary">© 2020 Copyright:</span>
+      <a href="https://www.beehyv.com/"> Beehyv.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!--end of footer page-->
+
+  <!-- sample code -->
+
+  <!-- end of sample code -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="home.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

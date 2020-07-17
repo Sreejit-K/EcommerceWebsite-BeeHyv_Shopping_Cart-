@@ -1,0 +1,519 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>BeehyveShopingCart</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- this is my css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- java script -->
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+
+  <!-- font awesome      -->
+
+  <script src="https://kit.fontawesome.com/031756a0fb.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- navigation bar -->
+  <!-- <div class="container-fluid f1 bg-light headimg">
+    <div class="row justify-content-center"> -->
+  <!-- <div class="col-md-1  text-center mx-2 p-2">
+        <img src="https://www.beehyv.com/media/images/icons-SVG/Beehyv-Logo-01.svg" height="40px" width="auto">
+      </div> -->
+  <!-- as;djlkajds -->
+  <div class="headimg">
+    <nav class="navbar navbar-expand-lg navbar-dark text-light  ">
+
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon custom-toggler"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a href="main.html"><img class="m-3" src="https://www.beehyv.com/media/images/icons-SVG/Beehyv-Logo-01.svg" height="40px" width="auto"></a>
+        <a class="navbar-brand text-success mx-3" href="main.html">Shopping Cart</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+          <li class="text-light nav-item ">
+            <a class="nav-link  mx-3" href="home.html">Home & Furniture<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  mx-3" href="electronics.html">Electonics</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link mx-3" href="main.html">Sports & Clothing</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link mx-3" href="clothing.html">clothing</a>
+          </li> -->
+          <li class="nav-item  ">
+            <a class="nav-link  mx-3" href="books.html">Books</a>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2  my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+
+        <span class="mx-5"><a href="cart.html"><i class="fa fa-shopping-cart fa-2x text-success pt-2 " aria-hidden="true"></i></a>
+          <span class=" badge bg-light text-dark cart-item">0
+          </span></span>
+
+        <a class="navbar-brand" href="login.html">Logout</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- asdkljlasd -->
+  <!-- <div class="col-md-1text-center mt-2 ">
+        <a href="cart.html"><i class="fa fa-shopping-cart fa-2x text-dark pt-2 " aria-hidden="true"></i></a>
+        <span class=" badge bg-dark text-light cart-item">0
+        </span>
+        </a>
+      </div>
+      <div class="col-md-1">
+        <h5><a href="login.html" class="text-dark py-2 mx-2">Logout</a></h5>
+      </div> -->
+
+
+  <!-- </div>
+
+  </div> -->
+  <!-- end of navigation bar -->
+
+
+  <!-- cart -->
+
+  <div class="contaier f1 ">
+    <div class="row ">
+      <div class="col-md-5  border-right col-lg-2 col-sm-12 text-center ">
+
+        <h2 class="text-xs-center text-md-left  m-2">Filters</h2>
+        <hr class="deep-purple bg-dark text-xs-center text-md-left accent-2 mb-4 mt-0 d-inline-block " style="width: 100%;">
+
+        <!-- brand filter -->
+        <h4 class="text-xs-center text-md-left t m-4">Brands</h4>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="item" name="item"><span class="ml-2">All</span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Nike" name="Nike"><span class="ml-2">Nike</span></label>
+        </div>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Puma" name="Puma"><span class="ml-2">Puma</span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Addidas" name="Addidas"><span class="ml-2">Addidas</span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="filter-checkboxes" type="checkbox" value="Reebok" name="Reebok"><span class="ml-2">Reebok</span></label>
+        </div>
+        <!-- end of brand filter  -->
+
+        <!-- price filter -->
+        <h4 class="text-xs-center text-md-left  m-4">Pice</h4>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="item" name="item"><span class="ml-2">All price ranges</span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p1" name="p1"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 0 to <i class="fa fa-rupee " style="font-size:13px"></i> 1000 </span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p2" name="p2"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 1000 to <i class="fa fa-rupee" style="font-size:13px"></i> 2000 </span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p3" name="p3"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 2000 to <i class="fa fa-rupee" style="font-size:13px"></i> 3000</span> </label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p4" name="p4"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 3000 to <i class="fa fa-rupee" style="font-size:13px"> 4000 </i> </span></label>
+        </div>
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p5" name="p5"> <span class="ml-2"><i class="fa fa-rupee" style="font-size:13px"></i> 4000 to <i class="fa fa-rupee" style="font-size:13px"> 5000</i> </span> </label>
+        </div>
+
+        <div class="checkbox text-xs-center text-md-left mx-5">
+          <label><input class="price-checkboxes" type="checkbox" value="p6" name="p6"> <span class="ml-2"> <i class="fa fa-chevron-right mx-1" aria-hidden="true"></i> <i class="fa fa-rupee" style="font-size:13px"></i> 5000 </span> </label>
+        </div>
+        <!-- end of price filter -->
+      </div>
+
+
+
+      <!-- products -->
+      <div class="col-md-7 col-lg-10 col-sm-12">
+        <div class="row justify-content-between text-center">
+          <!-- product-card -->
+          <div class=" item Nike p2  product-card text-center  bg-light m-4">
+            <img class="card-img" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9163719/2019/4/23/1ed9f1e1-e6e7-4a8c-9df5-ed366510b0481556005789498-Nike-Men-Tshirts-9401556005788616-1.jpg" alt="Card image cap">
+            <h5 class="mt-3 ">Nike</h5>
+            <p>Men Black Solid Standard Fit ACDMY Round Neck DRI-FIT T-shirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1046</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Addidas p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.adidas.com/images/w_385,h_385,f_auto,q_auto:sensitive,fl_lossy/6b7d86e3d5094fcb87cdaa080110b9f9_9366/badge-of-sport-tee.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Addidas mens T-Shirt</h5>
+            <p>Addidas round neck black Tshirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 2200</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Nike  p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9084211/2019/4/2/8b33df1a-da9d-497e-a7ee-42fdfc72bb2e1554208471482-Nike-Women-Black-Slim-Fit-Solid-AS-W-NK-BLISS-VCTRY-DRI-FIT--1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Nike</h5>
+            <p>Women Black Slim Fit Solid BLISS VCTRY DRI-FIT Cropped Joggers</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 2895</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Puma p2  product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11443084/2020/2/14/5ffc3dcc-7a83-4fcf-960d-ccba2abce7471581664348316-Puma-Women-Bra-6781581664346853-1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Puma</h5>
+            <p>Black Printed Non-Wired Lightly Padded Dry Cell Sports Bra</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1954</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Nike p5 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/4030191/2018/4/11/11523428568605-Mens-Nike-Flex-Control-II-Training-Shoe-9901523428568458-1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Nike</h5>
+            <p>Men Grey Flex Control II Training Shoes</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 4496</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Reebok p1 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10575568/2019/10/11/27c6c0fd-fd08-4414-b0bc-723b298ba0001570777529640-Reebok-Men-Navy-Blue-Style-Round-Neck-T-shirt-26115707775281-1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Reebok</h5>
+            <p>Men Navy Blue Style Round Neck T-shirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 779</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Addidas  p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10528638/2019/12/16/09458401-582a-44a3-b3bc-9144df951c281576497930680-ADIDAS-Men-Track-Pants-5801576497929061-1.jpg"
+              alt="Card image cap">
+            <h5 class="my-3 ">Addidas</h5>
+            <p>Men Grey Melange E CAMO LIN Solid Joggers</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1996</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Addidas p4 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10394265/2020/3/26/56fcd415-a2f8-4bf1-867a-bc1535f91e381585213615631-ADIDAS-Men-Grey-Melange-Solid-Whizz-Running-Shoes-3931585213-1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Addidas </h5>
+            <p>Men Grey Melange Solid Whizz Running Shoes</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 3359</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Reebok  p3 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11383024/2020/3/21/3d466ea1-a367-469d-b772-f69f8b4c7e381584793660055-Reebok-Men-Navy-Blue-Solid-Strike-Blaze-LP-Sports-Sandals-94-1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Reebok</h5>
+            <p>Men Navy Blue Solid Strike Blaze LP Sports Sandals</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 2239</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Reebok p2 p6 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8497537/2019/8/7/3a444f06-1b9d-4148-aa05-59e3fa2e79721565177553304-Reebok-Men-Black--LIme-Green-Pump-Supreme-EMB-Running-Shoes--1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Reebok </h5>
+            <p>Unisex Black & LIme Green Pump Supreme EMB Running Shoes</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 9099</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Puma p1 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10781022/2019/11/22/e54476c5-2bb9-48b3-9ee6-40c41fdaf1d81574414754744-Puma-Men-Tshirts-5431574414753293-1.jpg"
+              alt="Card image cap">
+            <h5 class="my-3 ">Puma</h5>
+            <p>Men Black Slim Fit Solid Tour Round Neck T-shirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i>976</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Nike p2  product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px"
+              src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11702420/2020/6/18/3d3f42d4-ed15-43d2-8dcb-51eabd9301741592480722690-Nike-Dri-FIT-Academy-M18-Mens-Soccer-Shorts-1941592480720404-1.jpg" alt="Card image cap">
+            <h5 class="my-3 ">Nike</h5>
+            <p>Men Navy Blue Solid Regular Fit Football Shorts</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1695</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Puma p2 product-card text-center  bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11443124/2020/2/13/e24c9bce-98b1-44b8-83f5-0e6383e1678e1581594016614-Puma-Women-Tshirts-411581594014973-1.jpg"
+              alt="Card image cap">
+            <h5 class="my-3 ">Puma</h5>
+            <p>Women Black Printed Round Neck Cat dryCELL Training T-shirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1495</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Reebok p1 product-card text-center bg-light m-4">
+            <img class="card-img " height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10575664/2019/9/26/1cfc6041-6302-4b84-a3f5-c66fdffa866e1569484396624-Reebok-Men-Tshirts-9041569484395117-1.jpg"
+              alt="Card image cap">
+            <h5 class="my-3 ">Reebok</h5>
+            <p>Men Charcoal Grey Foundation PERF Solid Polo Collar T-shirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 714</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Puma p2 product-card text-center bg-light m-4">
+            <img class="card-img " height="300px" src="https://assets.ajio.com/medias/sys_master/root/h2f/h6e/12670172332062/-1117Wx1400H-460324488-blue-MODEL.jpg" alt="Card image cap">
+            <h5 class="my-3">puma</h5>
+            <p>Men blue Round Neck DRI-FIT T-shirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1256</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+          <!-- product-card -->
+          <div class=" item Addidas p2 product-card text-center bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10528638/2019/12/16/09458401-582a-44a3-b3bc-9144df951c281576497930680-ADIDAS-Men-Track-Pants-5801576497929061-1.jpg"
+              alt="Card image cap">
+            <h5 class="my-3 ">Addidas </h5>
+            <p>Men Grey Melange E CAMO LIN Solid Joggers</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 1964</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+          <!-- end of product card -->
+
+          <!-- product-card -->
+          <div class=" item Reebok p3 product-card text-center bg-light m-4">
+            <img class="card-img" height="300px" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10465544/2019/12/6/e542a7dc-cab5-43a7-a15e-9a17770c208a1575611438884-Reebok-Men-Sports-Shoes-7621575611438026-1.jpg"
+              alt="Card image cap">
+            <h5 class="my-3 ">Reebok</h5>
+            <p>Men Black Solid Standard Fit ACDMY Round Neck DRI-FIT T-shirt</p>
+            <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 2995</h6>
+            <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+          </div>
+        </div>
+        <!-- end of product card -->
+
+        <!-- product-card -->
+        <div class=" item Puma p4 product-card text-center bg-light m-4">
+          <img class="card-img" height="330px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS-yVhjvkg0DYVpNZOXHx1S0-ApZm7A-NkDAw&usqp=CAU" alt="Card image cap">
+          <h5 class="my-3 ">Puma</h5>
+          <p>black long sleve Tshirt</p>
+          <h6 class="mt-2"> <i class="fa fa-rupee" style="font-size:13px"></i> 3249</h6>
+          <button class="addtocart text-secondary mt-2  btn btn-outline-dark" type="button" name="button">Add to cart</button>
+        </div>
+
+      </div>
+      <!-- end of product card -->
+
+
+    </div>
+
+  </div>
+  <!-- end of products -->
+  </div>
+  </div>
+
+  </div>
+  <!-- end of cart -->
+
+
+
+  <!-- footer page -->
+  <footer class="page-footer f1 s1 font-small unique-color-dark" style="background-color:#00001a;">
+
+    <div style="background-color: #6351ce;">
+      <div class="container-fluid">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-light text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="deep-purple bg-light  accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place.</p>
+          <p> <span class="font-weight-bold">BeeHyv</span> is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, books, personal care products and more</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 text-light mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple bg-light  accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!" class="text-light ">Fashion </a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Electronics</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Sport Wear</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Books</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Home products</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2  text-light  col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase  font-weight-bold">Useful links</h6>
+          <hr class="bg-light ccent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!" class="text-light ">Your Account</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Discounts</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple bg-light accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3 "></i> Hyderabad, Gachiboli, IND</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@beehyv.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright bottom-footer text-light py-3"><span class="text-secondary">© 2020 Copyright:</span>
+      <a href="https://www.beehyv.com/"> Beehyv.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!--end of footer page-->
+
+  <!-- sample code -->
+
+  <!-- end of sample code -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="app.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

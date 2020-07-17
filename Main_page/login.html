@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- this is my css -->
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <!--  jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+  <!-- font awesome      -->
+
+  <script src="https://kit.fontawesome.com/031756a0fb.js" crossorigin="anonymous"></script>
+
+  <!--  Date Range Picker -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+
+  <title>BeeHyvLoginpage</title>
+</head>
+
+<body class="f1">
+
+
+  <!-- 1st section -->
+  <div class="container-fluid height1" id="c1">
+    <div class="row text-align-right">
+      <!-- left section -->
+      <div class="col-9">
+      </div>
+      <!-- end of left section -->
+
+      <!-- right section -->
+      <div class="col-3 text-center height1 f1 s1 py-3" id="login">
+
+        <!-- logo -->
+        <div class="text-left mt-5 mx-2 p-2">
+          <img src="https://www.beehyv.com/media/images/icons-SVG/Beehyv-Logo-01.svg" height="60px" width="auto">
+        </div>
+
+        <!-- login form -->
+        <div class=" ml-4 text-left text-align-center mt-3">
+
+          <h1 class="text-light mb-5 ">Login</h1>
+
+
+          <!-- <form action="" method="post">
+            <h6 style="padding-right:100px;">LOGIN</h6>
+            <br>
+            <input type="text" id="username" name="username" placeholder="username" required> <br>
+            <input type="password" id="password" name="password" placeholder="password" required><br>
+            <input type="submit" value="Login" onclick="getinfo()">
+            <br>
+            <a href="#" style=" font-family: arial, sans-serif;color:white ;font-size:15px; padding-right:100px;" class="btn">Forgot password?</a>
+          </form> -->
+
+
+          <form action="" method="post">
+            <!-- email -->
+            <div class="form-group ">
+              <label class="  text-light" for="exampleInputEmail1">Email address*</label>
+              <input type="text" id="username" name="username" placeholder="username" class="w-75 form-control " required>
+              <small id="emailHelp" class=" form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <!-- password -->
+            <div class="form-group">
+              <label class="text-light s1" for="exampleInputPassword1">Password</label>
+              <input type="password" id="password" name="password" class="w-75 form-control " placeholder="password" required><br>
+            </div>
+
+            <!-- forgot password -->
+            <p class="my-3" class="forgot"><a href="forgot.html">Forgot password</a></p>
+
+            <!-- login button -->
+            <button type="submit submitlg" class=" s1 btn btn-dark" onclick="getinfo()">Login</button>
+          </form>
+          <!-- end of form -->
+        </div>
+        <!-- end of login form -->
+      </div>
+      <!-- end of right section -->
+    </div>
+  </div>
+  <!-- end of 1st section -->
+
+  <!-- 2nd section -->
+  <div class="container-fluid s1 f1 height2" id="c3">
+    <div class="row height2 justify-content-center align-items-center" id="login">
+
+      <div class=" m-5  p-2">
+        <img class="ml-5" src="https://www.beehyv.com/media/images/icons-SVG/Beehyv-Logo-01.svg" height="100px" width="auto">
+      </div>
+
+      <h2 class="text-center m-5 align-middle">
+        <span class="text-primary">Whatever you’ve got in mind,</span> <span class="text-success">we’ve got inside</span>
+      </h2>
+
+    </div>
+  </div>
+  <!-- end of 2 nd section -->
+
+  <!-- end of the 3 rd division   -->
+  <div class="container-fluid f1" id="c2">
+    <div class="row text-align-right">
+      <!-- left section  -->
+      <div class="col-3 s1 py-3 height1" id="login">
+        <div class="ml-3">
+          <!-- SignUp form -->
+
+          <h3 class="text-light my-5 s1">Sign Up</h3>
+
+          <!-- form -->
+          <form>
+
+            <!-- first name -->
+            <div class="form-group s1">
+              <label class="text-light " for="exampleInputPassword1"> First Name*</label>
+              <input type="text" id="firstName" class=" w-75 form-control text-field first-name-field" required>
+            </div>
+
+            <!-- last name -->
+            <div class="form-group s1">
+              <label class="text-light " for="exampleInputPassword1">Last Name*</label>
+              <input type="text" id="lastName" class=" w-75 form-control text-field last-name-field" required>
+            </div>
+
+            <!-- date of birth -->
+            <div class="form-group">
+              <label class=" text-light control-label" for="date">Date of birth*</label>
+              <input type="date" id="dateOfBirth" class=" w-75 form-control date-field dob-field" min="1900-01-01" max="2015-09-18" required>
+            </div>
+            <!-- email  -->
+            <div class="form-group">
+              <label class="text-light" for="exampleInputEmail1">Email address*</label>
+              <input type="email" id="emailsp" class=" w-75 form-control text-field email-field" required>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <!-- password -->
+            <div class="form-group">
+              <label class="text-light" for="exampleInputPassword1">Password*</label>
+              <input type="password" class=" w-75 form-control text-field password-field" id="psw" placeholder="Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              <span class="w-75 border border-rounded message" id="message">
+                <h5 class="mb-4 ">Password must contain:</h5>
+                <p id="letter" class=" mx-auto pl-5 invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="mx-auto pl-5 invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="mx-auto pl-5 invalid">A <b>number</b></p>
+                <p id="length" class="mx-auto pl-5 invalid">Minimum <b>8 characters</b></p>
+              </span>
+            </div>
+            <!-- mobile number -->
+            <div class="field-group">
+              <label class="text-light" for="tel">Mobile No*</label>
+              <input type="tel" id="tel" class=" w-75 form-control text-field tel-field" required>
+            </div>
+            <!-- submit button -->
+            <button type="submit" class=" m-2 btn btn-dark">Submit</button>
+          </form>
+          <!-- end of form -->
+        </div>
+        <!-- end of signup form -->
+      </div>
+      <!-- end of left section   -->
+
+      <!-- right section -->
+      <div class="col-9">
+      </div>
+      <!-- end of right section -->
+
+    </div>
+  </div>
+  <!-- end of the 3 rd division   -->
+  <!-- footer page -->
+  <footer class="page-footer f1 s1 font-small unique-color-dark" style="background-color:#00001a;">
+
+    <div style="background-color: #6351ce;">
+      <div class="container-fluid">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-right mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-light text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="deep-purple bg-light  accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place.</p>
+          <p> <span class="font-weight-bold">BeeHyv</span> is the ultimate destination for fashion and lifestyle, being host to a wide array of merchandise including clothing, footwear, accessories, books, personal care products and more</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 text-light mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple bg-light  accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!" class="text-light ">Fashion </a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Electronics</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Sport Wear</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Books</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Home products</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2  text-light  col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase  font-weight-bold">Useful links</h6>
+          <hr class="bg-light ccent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!" class="text-light ">Your Account</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Discounts</a>
+          </p>
+          <p>
+            <a href="#!" class="text-light ">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple bg-light accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3 "></i> Hyderabad, Gachiboli, IND</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@beehyv.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright bottom-footer text-light py-3"><span class="text-secondary">© 2020 Copyright:</span>
+      <a href="https://www.beehyv.com/"> Beehyv.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!--end of footer page-->
+
+
+
+
+  <!-- Optional JavaScript -->
+  <script src="login.js"></script>
+  <script src="password.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

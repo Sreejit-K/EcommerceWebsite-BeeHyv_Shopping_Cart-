@@ -1,0 +1,249 @@
+#c1{
+  background-image: url(https://images.pexels.com/photos/1051747/pexels-photo-1051747.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#c2{
+  background-image: url(https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#c3{
+  background-image: url(https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-attachment:  scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.height1{
+  min-height: 100vh;
+}
+.height2{
+  min-height: 400px;
+}
+
+#login{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+fill{
+  height:auto;
+}
+.s1{
+  font-family: 'Changa', sans-serif;
+}
+.f1{
+  font-size: 13px;
+}
+
+/* signup & login validation */
+$color-invalid: red;
+$color-valid: green;
+
+
+@mixin field-outline($color) {
+    outline: $color solid 2px;
+}
+
+@mixin message-invalid($message) {
+    color: $color-invalid;
+    content: $message;
+}
+
+* {
+    outline: none;
+}
+
+.form-heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.application-form {
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 15px auto;
+    padding: 15px;
+    width: 100%;
+}
+
+.helper-text {
+    font-size: 12px;
+    margin-botom: 10px;
+    text-align: right;
+}
+
+
+.form-label {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    text-align: right;
+    width: 100px;
+}
+
+
+
+
+.message1 {
+    display: inline-block;
+    height:10px;
+}
+
+.form-button {
+    background: linear-gradient(180deg, #808080, #2a2a2a);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+
+}
+
+:required + .message::before {
+    content: "* ";
+}
+
+.text-field {
+    &:focus:required:valid {
+        @include field-outline($color-valid);
+    }
+
+    &:focus:required:invalid {
+        @include field-outline($color-invalid);
+    }
+}
+
+.date-field {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    &:focus:in-range {
+        @include field-outline($color-valid);
+    }
+
+    &:focus:out-of-range {
+        @include field-outline($color-invalid);
+    }
+}
+
+.website-field {
+    &:focus:valid {
+        @include field-outline($color-valid);
+    }
+
+    &:focus:invalid {
+        @include field-outline($color-invalid);
+    }
+}
+
+.first-name-field:focus:invalid + .message::after {
+    color: $color-invalid;
+    content: "Please enter your first name";
+}
+
+.last-name-field:focus:invalid + .message::after {
+    @include message-invalid("Please enter your last name");
+}
+
+.dob-field:focus:out-of-range + .message::after {
+    @include message-invalid("Date is out of range");
+}
+
+.tel-field:focus:invalid + .message::after {
+    @include message-invalid("Invalid telephone number");
+}
+
+.email-field:focus:invalid + .message::after {
+    @include message-invalid("Invalid email address");
+}
+
+.website-field:focus:invalid + .message::after {
+    @include message-invalid("Invalid website URL");
+}
+
+
+/* password validation */
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+
+
+#message p {
+  font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+/* end of password validation */
+
+/* footer */
+.bottom-footer{
+  padding-top:1px;
+  text-align:center;
+  font-family: arial, sans-serif;
+  font-size:11px;
+  width:auto;
+  height:30px;
+  background-color:black;
+
+}
